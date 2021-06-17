@@ -1,0 +1,324 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.bgimage{
+    /* background-image: url('https://wallpapercave.com/wp/wp5501189.jpg'); */
+    background-image: url('./static/img3.jpg');
+    /* background-image: url('https://wallpaperaccess.com/full/4792559.jpg'); */
+    /* background-image: url('https://www.teahub.io/photos/full/294-2942405_dance-images-full-hd.jpg'); */
+    /* background-image: url('https://piggy-rider.s3.ap-south-1.amazonaws.com/sye-arun%27s-dragonz-dance-crew-primary-image-VWGxIFUoqgwckzea.jpg'); */
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: cover;
+}
+nav{
+    height: 70px;
+    background-color: rgba(0,0,0,0.4);
+    /* opacity: 0.8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px; */
+}
+/* nav .logo{
+    border: 2px solid red;
+} */
+nav ul{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+nav ul li{
+  list-style-type: none;
+  margin: 10px 0px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: grey;
+    /* text-decoration: underline; */
+    transition: 1s;
+}
+.introsection{
+    height: 90vh;
+    /* background-color: yellow; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.introsection h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.content .btn{
+    display: block;
+    /* width: 88px; */
+    padding: 6px 14px;
+    font-size: 20px;
+    margin: 12px auto;
+    border: 2px solid black;
+    border-radius: 3px;
+    outline: none;
+    /* background-color: rgb(83, 83, 228); */
+    background-color: #555555;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #555555;
+    border: 2px solid white;
+    color: white;
+    transition: 0.7s;
+}
+.modalsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    /* height: 100%; */
+    /* transform: translate(-50%, -50%); */
+}
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s;
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    height: 400px;
+    width: 400px;
+    /* background-color: violet; */
+    background-color: #f7f7ff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.modal div{
+    width: 85%;
+}
+.formheading{
+    margin: 10px 10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    /* background: none; */
+}
+.input label{
+   /* padding: 3px 4px; */
+   font-size: 20px;
+}
+.input input{
+  font-size: 18px;
+  /* padding: 5px 5px; */
+  /* border: 1px solid gray; */
+  outline: none;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  /* border-radius: 5px; */
+}
+.formbutton{
+    width: 85%;
+    font-size: 20px;
+    padding: 10px 4px;
+    margin: 14px 0px;
+    background-color: #2980b9;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.formsection .modal-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.testimonials{
+    padding: 40px 0px;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: #fff;
+    padding: 30px;
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.95);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .box{
+    border: none;
+}
+ .heading1{
+    /* border: 2px solid green; */
+    text-align: center;
+    /* width: 100%; */
+    margin-top: 0px;
+} 
+.heading1 h3{
+    font-size: 1.25rem;
+    font-weight: 0px;
+}
+.heading2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5px;
+}
+.heading2 .box2{
+    /* border: 2px solid green; */
+    margin: 10px 20px;
+}
+.heading2 .box2 h3{
+  text-align: center;
+  margin: 3px 4px;
+  font-size: 1.25rem;
+}
+
+.heading2 .box2 p{
+    text-align: center;
+    font-size: 20px;
+    margin: 3px 4px;
+}
+
+@media screen and (max-width:960px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+    nav ul{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media  screen and (max-width:580px) {
+    .introsection h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer{
+        height: 280px;
+    }
+    .heading2{
+        flex-direction: column;
+    }
+    .heading2 p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .introsection h1{
+        font-size: 1.65rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .footer{
+        height: 300px;
+    }
+    .box2 p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .footer{
+        height: 350px;
+    }
+    .box2 p{
+        font-size: 8px;
+    }
+}
